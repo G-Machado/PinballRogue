@@ -20,7 +20,7 @@ public class DestructableObject : MonoBehaviour
     private GameObject mainGameObject;
 
 
-        public void TakeDamage(Rigidbody ballRB, float ballDamageMultiplier)
+    public void TakeDamage(Rigidbody ballRB, float ballDamageMultiplier)
     {
         // velocity magnitude varies from 0 to 20
         float damageReceived = ballRB.velocity.magnitude * damageNormalizerAux * damageTakenPercentage * ballDamageMultiplier;
@@ -55,17 +55,21 @@ public class DestructableObject : MonoBehaviour
     }
 
 
-    // Start is called before the first frame update
-    void Start()
+    protected void AtStart()
     {
         currentLife = maxLife;
         if (healthBar != null)
             healthBarXScale = healthBar.localScale.x;
     }
 
-    // Update is called once per frame
-    void Update()
+    // Start is called before the first frame update
+    protected void Start()
     {
-        
+        AtStart();
+    }
+
+    // Update is called once per frame
+    protected void Update()
+    {
     }
 }

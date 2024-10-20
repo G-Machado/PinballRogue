@@ -13,7 +13,7 @@ public class Pinball : MonoBehaviour
     {
         GameObject otherObj = collision.gameObject;
 
-
+        Debug.Log("1");
         if (otherObj.CompareTag("Destructable"))
         {
             DestructableObject destructableObj = otherObj.GetComponent<DestructableObject>();

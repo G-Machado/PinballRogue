@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4954118507989199473}
   - component: {fileID: 8284822655163665042}
   - component: {fileID: 2064642381020812617}
+  - component: {fileID: -5034578206168257239}
   m_Layer: 6
   m_Name: The Pin Ball
   m_TagString: pinball
@@ -133,3 +134,16 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 120
   m_CollisionDetection: 2
+--- !u!114 &-5034578206168257239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 301833644312155420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88c2f4616dc878841bb216ad94bb7941, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageMultiplier: 1
