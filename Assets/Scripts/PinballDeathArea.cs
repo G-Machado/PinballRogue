@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class PinballDeathArea : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+
+    [SerializeField]
+    private PinballsManager pinballsManager;
+
+
+    private void OnTriggerEnter(Collider other)
     {
-        
+        if (other.CompareTag("pinball"))
+        {
+            pinballsManager.SpawnNewPinball();
+            Destroy(other.gameObject);
+        }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
