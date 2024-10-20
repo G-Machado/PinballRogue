@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Collections;
 using UnityEngine;
 
 
@@ -16,7 +17,15 @@ public class PinballsManager : MonoBehaviour
     private Transform pinballSpawnPos;
 
     private int currentPinballIndex = 0;
+    private bool needStartImpulse = true;
+    private bool hasStartedImpulse = false;
+    private float startImpulseTimer = 0;
+    [SerializeField] private float maxImpulseTimer = 1;
 
+    [SerializeField] private float startImpulseForceContsAux = 1;
+
+    private GameObject currentPinballObj;
+    private Rigidbody currentPinballRB;
 
 
         public static void Shuffle<T>(List<T> list)
@@ -42,10 +51,16 @@ public class PinballsManager : MonoBehaviour
             return;
         }
 
-        GameObject newPinballObj = Instantiate(inventory.prefabs[currentPinballIndex], pinballSpawnPos.position, Quaternion.identity);
-
+        currentPinballObj = Instantiate(inventory.prefabs[currentPinballIndex], pinballSpawnPos.position, Quaternion.identity);
+        currentPinballRB = currentPinballObj.GetComponent<Rigidbody>();
+        needStartImpulse = true;
         currentPinballIndex++;
         
+    }
+
+    private void ApplyStartImpulse(){
+        currentPinballRB.AddForce(Vector3.up * startImpulseTimer * startImpulseForceContsAux, ForceMode.Impulse);
+        startImpulseTimer = 0;
     }
 
 
@@ -64,6 +79,16 @@ public class PinballsManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (needStartImpulse && Input.GetKeyDown(KeyCode.Space))
+        {
+            hasStartedImpulse = true;
+        }
+        if (hasStartedImpulse){
+            startImpulseTimer += Time.deltaTime;
+            if (startImpulseTimer >= maxImpulseTimer) {
+                startImpulseTimer = maxImpulseTimer;
+                ApplyStartImpulse();
+            }
+        }
     }
 }
