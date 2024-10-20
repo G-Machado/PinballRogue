@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class DestructableObject : MonoBehaviour
@@ -15,9 +16,11 @@ public class DestructableObject : MonoBehaviour
     [SerializeField] private Transform healthBar;
     private float healthBarXScale;
 
-   
+    [SerializeField]
+    private GameObject mainGameObject;
 
-    public void TakeDamage(Rigidbody ballRB, float ballDamageMultiplier)
+
+        public void TakeDamage(Rigidbody ballRB, float ballDamageMultiplier)
     {
         // velocity magnitude varies from 0 to 20
         float damageReceived = ballRB.velocity.magnitude * damageNormalizerAux * damageTakenPercentage * ballDamageMultiplier;
@@ -45,7 +48,10 @@ public class DestructableObject : MonoBehaviour
     {
         yield return new WaitForSeconds(deathAnimationDuration);
         OnBeforeDestroy();
-        Destroy(gameObject);
+        if (mainGameObject)
+            Destroy(mainGameObject);
+        else
+            Destroy(gameObject);
     }
 
 
