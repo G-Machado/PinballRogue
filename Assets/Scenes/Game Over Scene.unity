@@ -1986,7 +1986,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ( press spacebar to replay )
+  m_text: ( press spacebar to menu )
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: aa3c2e0cb705c8e498b89c0cb537107e, type: 2}
   m_sharedMaterial: {fileID: 2769187549963781034, guid: aa3c2e0cb705c8e498b89c0cb537107e, type: 2}
