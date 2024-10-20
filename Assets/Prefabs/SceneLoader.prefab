@@ -55,6 +55,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 518934033329714018}
     m_Modifications:
+    - target: {fileID: 1141835763299530795, guid: 839bf53e0fa378b42819e0b2390132ef, type: 3}
+      propertyPath: m_ClearFlags
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1141835763299530795, guid: 839bf53e0fa378b42819e0b2390132ef, type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 0.20425418
+      objectReference: {fileID: 0}
+    - target: {fileID: 1141835763299530795, guid: 839bf53e0fa378b42819e0b2390132ef, type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0.24719954
+      objectReference: {fileID: 0}
+    - target: {fileID: 1141835763299530795, guid: 839bf53e0fa378b42819e0b2390132ef, type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0.3207547
+      objectReference: {fileID: 0}
     - target: {fileID: 4179677187565999572, guid: 839bf53e0fa378b42819e0b2390132ef, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -107,8 +123,13 @@ PrefabInstance:
       propertyPath: referenceSize.y
       value: 1080
       objectReference: {fileID: 0}
+    - target: {fileID: 7904003526370900641, guid: 839bf53e0fa378b42819e0b2390132ef, type: 3}
+      propertyPath: pixelationFactor
+      value: 2.3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 1858736953571814979, guid: 839bf53e0fa378b42819e0b2390132ef, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 839bf53e0fa378b42819e0b2390132ef, type: 3}
