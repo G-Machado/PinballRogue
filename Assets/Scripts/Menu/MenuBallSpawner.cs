@@ -26,6 +26,7 @@ public class MenuBallSpawner : MonoBehaviour
 
     private void OnReturnedToPool(GameObject @object)
     {
+        @object.GetComponent<Rigidbody>().velocity = Vector3.zero;
         @object.SetActive(false);
     }
 
@@ -36,7 +37,7 @@ public class MenuBallSpawner : MonoBehaviour
 
     private GameObject CreatePooledItem()
     {
-        return Instantiate(ballPrefab);
+        return Instantiate(ballPrefab, transform);
     }
 
     public void SpawnBall()
@@ -48,11 +49,18 @@ public class MenuBallSpawner : MonoBehaviour
             Random.Range(-spawnBox.size.z/2, spawnBox.size.z/2)) + spawnBox.gameObject.transform.position;
 
         ball.transform.position = randomPos;
+
+        StartCoroutine(DestroyBall(ball));
     }
     private IEnumerator SpawnRoutine()
     {
         SpawnBall();
         yield return new WaitForSeconds(spawnInterval);
         StartCoroutine(SpawnRoutine());
+    }
+    private IEnumerator DestroyBall(GameObject ball)
+    {
+        yield return new WaitForSeconds(10);
+        ballPool.Release(ball);
     }
 }
