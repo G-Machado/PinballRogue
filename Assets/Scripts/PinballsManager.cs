@@ -61,6 +61,8 @@ public class PinballsManager : MonoBehaviour
     private void ApplyStartImpulse(){
         currentPinballRB.AddForce(Vector3.up * startImpulseTimer * startImpulseForceContsAux, ForceMode.Impulse);
         startImpulseTimer = 0;
+        needStartImpulse = false;
+        Debug.Log("aaa");
     }
 
 
@@ -79,19 +81,21 @@ public class PinballsManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (needStartImpulse && Input.GetKeyDown(KeyCode.Space))
-        {
-            hasStartedImpulse = true;
-        }
-        if (hasStartedImpulse )
-        {
-            startImpulseTimer += Time.deltaTime;
-            if (Input.GetKeyUp(KeyCode.Space)){
-                ApplyStartImpulse();
+        if (needStartImpulse){ 
+            if (!hasStartedImpulse && Input.GetKeyDown(KeyCode.Space))
+            {
+                hasStartedImpulse = true;
             }
-            else if (startImpulseTimer >= maxImpulseTimer) {
-                startImpulseTimer = maxImpulseTimer;
-                ApplyStartImpulse();
+            if (hasStartedImpulse)
+            {
+                startImpulseTimer += Time.deltaTime;
+                if (Input.GetKeyUp(KeyCode.Space)){
+                    ApplyStartImpulse();
+                }
+                else if (startImpulseTimer >= maxImpulseTimer) {
+                    startImpulseTimer = maxImpulseTimer;
+                    ApplyStartImpulse();
+                }
             }
         }
     }

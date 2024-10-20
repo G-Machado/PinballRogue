@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6860543244565097243}
+  - component: {fileID: -4544603958394089313}
   m_Layer: 0
   m_Name: Enemy_Setup_3
   m_TagString: Untagged
@@ -33,6 +34,22 @@ Transform:
   - {fileID: 1958662071646390631}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-4544603958394089313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7634092704000678305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb2a4928821fd8c429d0e7131cb84d95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyManager: {fileID: 0}
+  enemies:
+  - {fileID: 5338911366967521948}
+  - {fileID: 4779715515941270453}
 --- !u!1001 &5337601296183890000
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -101,6 +118,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 179.933
       objectReference: {fileID: 0}
+    - target: {fileID: 835127198145236834, guid: e2aafa8770d34a9591b41bedf4e318ba, type: 3}
+      propertyPath: enemyGroup
+      value: 
+      objectReference: {fileID: -4544603958394089313}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -111,6 +132,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4544219117696442, guid: e2aafa8770d34a9591b41bedf4e318ba, type: 3}
   m_PrefabInstance: {fileID: 5337601296183890000}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &5338911366967521948 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1521177035039436, guid: e2aafa8770d34a9591b41bedf4e318ba, type: 3}
+  m_PrefabInstance: {fileID: 5337601296183890000}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7501777693233575358
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -119,6 +145,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6860543244565097243}
     m_Modifications:
+    - target: {fileID: -9101137326705158784, guid: e29ce6419d1383b46bd5c79451d8b474, type: 3}
+      propertyPath: enemyGroup
+      value: 
+      objectReference: {fileID: -4544603958394089313}
     - target: {fileID: 3048759792445736459, guid: e29ce6419d1383b46bd5c79451d8b474, type: 3}
       propertyPath: m_Name
       value: EnemySlime (2)
@@ -183,5 +213,10 @@ PrefabInstance:
 --- !u!4 &1958662071646390631 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8301607278614772953, guid: e29ce6419d1383b46bd5c79451d8b474, type: 3}
+  m_PrefabInstance: {fileID: 7501777693233575358}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4779715515941270453 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3048759792445736459, guid: e29ce6419d1383b46bd5c79451d8b474, type: 3}
   m_PrefabInstance: {fileID: 7501777693233575358}
   m_PrefabAsset: {fileID: 0}
