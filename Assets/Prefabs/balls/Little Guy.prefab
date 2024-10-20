@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3905853082866944876}
   - component: {fileID: 8308718182011856578}
   - component: {fileID: 6089226516376411094}
+  - component: {fileID: -5029520740200757227}
   m_Layer: 6
   m_Name: Little Guy
   m_TagString: pinball
@@ -133,3 +134,16 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 120
   m_CollisionDetection: 2
+--- !u!114 &-5029520740200757227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2773547627905534788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88c2f4616dc878841bb216ad94bb7941, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageMultiplier: 0.6
