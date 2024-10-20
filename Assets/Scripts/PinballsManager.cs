@@ -83,9 +83,13 @@ public class PinballsManager : MonoBehaviour
         {
             hasStartedImpulse = true;
         }
-        if (hasStartedImpulse){
+        if (hasStartedImpulse )
+        {
             startImpulseTimer += Time.deltaTime;
-            if (startImpulseTimer >= maxImpulseTimer) {
+            if (Input.GetKeyUp(KeyCode.Space)){
+                ApplyStartImpulse();
+            }
+            else if (startImpulseTimer >= maxImpulseTimer) {
                 startImpulseTimer = maxImpulseTimer;
                 ApplyStartImpulse();
             }
