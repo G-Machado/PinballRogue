@@ -1433,6 +1433,37 @@ Transform:
   - {fileID: 12181893}
   m_Father: {fileID: 190519874}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -89.526}
+--- !u!1 &476038869
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 476038870}
+  m_Layer: 0
+  m_Name: Dynamic Decoration
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &476038870
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 476038869}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.35226196, y: 5.4495316, z: -13.791003}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &516525400
 GameObject:
   m_ObjectHideFlags: 0
@@ -1443,7 +1474,7 @@ GameObject:
   m_Component:
   - component: {fileID: 516525401}
   m_Layer: 0
-  m_Name: Decoration
+  m_Name: Static Decoration
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6002,6 +6033,7 @@ SceneRoots:
   - {fileID: 963194228}
   - {fileID: 187332462}
   - {fileID: 1844659503}
+  - {fileID: 476038870}
   - {fileID: 516525401}
   - {fileID: 705507995}
   - {fileID: 5092165120262016021}
