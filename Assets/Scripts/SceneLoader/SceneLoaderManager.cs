@@ -14,7 +14,7 @@ public class SceneLoaderManager : MonoBehaviour
 
     void Awake()
     {
-        if (instance != null)
+        if (SceneLoaderManager.instance != null)
         {
             Destroy(this.gameObject);
             return;
@@ -22,7 +22,7 @@ public class SceneLoaderManager : MonoBehaviour
 
         DontDestroyOnLoad(gameObject);
         instance = this;
-        currentIndex = initialIndex;
+        currentIndex = SceneManager.GetActiveScene().buildIndex;
     }
 
     private void OnEnable()
@@ -41,17 +41,24 @@ public class SceneLoaderManager : MonoBehaviour
     }
     public void TriggerNextSceneLoad()
     {
-        if (currentIndex >= SceneManager.sceneCountInBuildSettings-1) return;
         if (isLoading) return;
-
-        currentIndex++;
-
         isLoading = true;
+
+        if (currentIndex >= SceneManager.sceneCountInBuildSettings-1) 
+        {
+            currentIndex = 0;
+        }
+        else
+        {
+            currentIndex++;
+        }
+
         CameraPixellation.instance.PlayFadeOut();
     }
     private void HandleScreenFaded()
     {
         isLoading = false;
+        Debug.Log(currentIndex);
         LoadScence(currentIndex);
         CameraPixellation.instance.PlayFadeIn();
     }
@@ -60,6 +67,14 @@ public class SceneLoaderManager : MonoBehaviour
     {
         if (isLoading) return;
         isLoading = true;
+        CameraPixellation.instance.PlayFadeOut();
+    }
+    public void TriggerSceneOver()
+    {
+        if (isLoading) return;
+        isLoading = true;
+
+        currentIndex = SceneManager.sceneCountInBuildSettings - 1;
         CameraPixellation.instance.PlayFadeOut();
     }
 }
