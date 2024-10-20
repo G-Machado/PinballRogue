@@ -6,8 +6,12 @@ using UnityEngine;
 
 public class PinballsManager : MonoBehaviour
 {
-
     [SerializeField]
+    private bool sidewaysLaunch = false;
+    
+
+
+        [SerializeField]
     private ScriptableInventory inventory;
 
     [SerializeField]
@@ -61,8 +65,11 @@ public class PinballsManager : MonoBehaviour
 
 
     private void ApplyStartImpulse(){
-        
-        currentPinballRB.AddForce(Vector3.up * 10 + Vector3.up * startImpulseTimer * startImpulseForceContsAux, ForceMode.Impulse);
+
+        Vector3 launchVector = sidewaysLaunch ? Vector3.right : Vector3.up;
+
+
+        currentPinballRB.AddForce(launchVector * 10 + launchVector * startImpulseTimer * startImpulseForceContsAux, ForceMode.Impulse);
         startImpulseTimer = 0;
         hasStartedImpulse = false;
         needStartImpulse = false;
@@ -73,7 +80,7 @@ public class PinballsManager : MonoBehaviour
     {
         if (other.CompareTag("pinball"))
         { 
-        needStartImpulse = false;
+            needStartImpulse = false;
 
         }
     }

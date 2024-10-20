@@ -59,7 +59,8 @@ public class DestructableObject : MonoBehaviour
     void Start()
     {
         currentLife = maxLife;
-        healthBarXScale = healthBar.localScale.x;
+        if (healthBar != null)
+            healthBarXScale = healthBar.localScale.x;
     }
 
     // Update is called once per frame
