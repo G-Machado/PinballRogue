@@ -30,6 +30,14 @@ public class MenuBallSpawner : MonoBehaviour
         @object.SetActive(false);
     }
 
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.Space)) 
+        { 
+            SceneLoaderManager.instance.TriggerNextSceneLoad();
+        }
+    }
+
     private void OnTakeFromPool(GameObject @object)
     {
         @object.SetActive(true);

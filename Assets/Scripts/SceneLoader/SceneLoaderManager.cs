@@ -10,8 +10,8 @@ public class SceneLoaderManager : MonoBehaviour
     [SerializeField] private int initialIndex = 0;
     [SerializeField] private CameraPixellation cameraPixelation;
     private int currentIndex;
-    private bool isLoading = false; 
-    
+    private bool isLoading = false;
+
     void Awake()
     {
         if (instance != null)
