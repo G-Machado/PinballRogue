@@ -9,7 +9,14 @@ public class CameraPixellation : MonoBehaviour
     public static CameraPixellation instance;
     private void Awake()
     {
-        instance = this;
+        if(instance != null)
+        {
+            Destroy(this.gameObject);
+        }
+        else
+        {
+            instance = this;
+        }
     }
 
     public Action OnScreenFaded;
