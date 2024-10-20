@@ -5,6 +5,12 @@ using UnityEngine.UIElements;
 
 public class CameraPixellation : MonoBehaviour
 {
+    public static CameraPixellation instance;
+    private void Awake()
+    {
+        instance = this;
+    }
+
     [SerializeField] private RenderTexture pixelTexture;
     [SerializeField] private Vector2 referenceSize;
     [Range(0,10)]
@@ -22,5 +28,10 @@ public class CameraPixellation : MonoBehaviour
         {
             pixelAnimator.Play("Pixel_Collision");
         }
+    }
+
+    public void PlayCollision()
+    {
+        pixelAnimator.Play("Pixel_Collision");
     }
 }
