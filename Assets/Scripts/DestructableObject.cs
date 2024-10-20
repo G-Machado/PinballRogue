@@ -37,10 +37,14 @@ public class DestructableObject : MonoBehaviour
 
     }
 
+    protected virtual void OnBeforeDestroy()
+    {
+    }
 
     private IEnumerator Die()
     {
         yield return new WaitForSeconds(deathAnimationDuration);
+        OnBeforeDestroy();
         Destroy(gameObject);
     }
 
