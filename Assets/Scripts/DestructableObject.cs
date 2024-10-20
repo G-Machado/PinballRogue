@@ -26,14 +26,16 @@ public class DestructableObject : MonoBehaviour
         float damageReceived = ballRB.velocity.magnitude * damageNormalizerAux * damageTakenPercentage * ballDamageMultiplier;
         currentLife -= damageReceived;
 
+        /*
         Vector3 newScale = healthBar.localScale;
         newScale.x = healthBarXScale * (currentLife / maxLife);
         healthBar.localScale = newScale;
+        */
 
         if (currentLife <= 0)
         {
-            newScale.x = 0;
-            healthBar.localScale = newScale;
+            //newScale.x = 0;
+            //healthBar.localScale = newScale;
             currentLife = 0;
             StartCoroutine(Die());
         }
