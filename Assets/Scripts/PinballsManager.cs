@@ -20,7 +20,7 @@ public class PinballsManager : MonoBehaviour
     private bool needStartImpulse = true;
     private bool hasStartedImpulse = false;
     private float startImpulseTimer = 0;
-    [SerializeField] private float maxImpulseTimer = 1;
+    [SerializeField] private float maxImpulseTimer = 3;
 
     [SerializeField] private float startImpulseForceContsAux = 1;
 
@@ -46,7 +46,7 @@ public class PinballsManager : MonoBehaviour
     public void SpawnNewPinball()
     {
 
-        if (currentPinballIndex > inventory.prefabs.Count){
+        if (currentPinballIndex >= inventory.prefabs.Count){
             GameOver();
             return;
         }
@@ -58,11 +58,33 @@ public class PinballsManager : MonoBehaviour
         
     }
 
+
+
     private void ApplyStartImpulse(){
-        currentPinballRB.AddForce(Vector3.up * startImpulseTimer * startImpulseForceContsAux, ForceMode.Impulse);
+        
+        currentPinballRB.AddForce(Vector3.up * 10 + Vector3.up * startImpulseTimer * startImpulseForceContsAux, ForceMode.Impulse);
         startImpulseTimer = 0;
+        hasStartedImpulse = false;
         needStartImpulse = false;
-        Debug.Log("aaa");
+    }
+
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("pinball"))
+        { 
+        needStartImpulse = false;
+
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("pinball"))
+        {
+            currentPinballRB.velocity = currentPinballRB.velocity.normalized;
+            needStartImpulse = true;
+        }
     }
 
 

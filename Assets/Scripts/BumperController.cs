@@ -14,27 +14,4 @@ public class BumperController : MonoBehaviour
         return bumpForceAmmount;
     }
 
-    void OnCollisionEnter(Collision collision)
-    {
-        
-        
-    }
-
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    void FixedUpdate()
-    {
-
-    }
 }
