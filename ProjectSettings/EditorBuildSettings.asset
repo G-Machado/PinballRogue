@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Xanxao GameplayScene.unity
+    guid: 35376d34ec779094e8a68455aecfac06
+  - enabled: 1
+    path: Assets/Scenes/Douglas Scene 1 - Easy.unity
+    guid: f83bc20bbec1f3140b3e69fef1a28db9
   m_configObjects: {}

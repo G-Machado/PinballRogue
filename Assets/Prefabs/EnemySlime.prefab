@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8301607278614772953}
   - component: {fileID: 6541930580548065023}
   - component: {fileID: 1469421942118452889}
-  - component: {fileID: 262491965996663656}
+  - component: {fileID: -9101137326705158784}
   m_Layer: 7
   m_Name: EnemySlime
   m_TagString: Destructable
@@ -85,7 +85,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &262491965996663656
+--- !u!114 &-9101137326705158784
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -94,15 +94,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 3048759792445736459}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 812807b084b43904eb81b08a4f78cee8, type: 3}
+  m_Script: {fileID: 11500000, guid: 25bda299fed1b9e45838f21b2f62ca75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   maxLife: 10
   currentLife: 0
   damageTakenPercentage: 1
-  damageNormalizerAux: 0.2
+  damageNormalizerAux: 0.5
   deathAnimationDuration: 1
   healthBar: {fileID: 8368959160577585835}
+  enemyGroup: {fileID: 0}
 --- !u!1 &5911184566296491413
 GameObject:
   m_ObjectHideFlags: 0

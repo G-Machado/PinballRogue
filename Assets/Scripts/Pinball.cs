@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Pinball : MonoBehaviour
@@ -31,7 +32,7 @@ public class Pinball : MonoBehaviour
     private void BumpOffBumper(GameObject bumper)
     {
         BumperController bumperController = bumper.GetComponent<BumperController>();
-        thisRB.velocity += thisRB.velocity.normalized * bumperController.GetBumpForce();
+        thisRB.AddForce(thisRB.velocity.normalized * bumperController.GetBumpForce(), ForceMode.Impulse);
     }
 
     // Start is called before the first frame update
