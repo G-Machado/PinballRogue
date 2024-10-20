@@ -9,6 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu Scene.unity
     guid: 98194e57224986f49bebd5d3d46d05a1
   - enabled: 1
-    path: Assets/Scenes/Douglas Scene 1 - Easy.unity
-    guid: f83bc20bbec1f3140b3e69fef1a28db9
+    path: Assets/Scenes/Main Scene 1 - Easy.unity
+    guid: ab84e79bb9015e54ba556217042f356f
   m_configObjects: {}
