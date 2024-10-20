@@ -22,7 +22,6 @@ public class Enemy : DestructableObject
     // Update is called once per frame
     void Update()
     {
-        base.Start();
 
     }
 }

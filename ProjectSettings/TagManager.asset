@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - pinball
+  - Destructable
+  - Bumper
+  - Enemy
   layers:
   - Default
   - TransparentFX

@@ -33,13 +33,18 @@ public class DestructableObject : MonoBehaviour
             newScale.x = healthBarXScale * (currentLife / maxLife);
             healthBar.localScale = newScale;
 
-            if (currentLife <= 0)
-            {
+            
+        }
+        if (currentLife <= 0)
+        {
+
+            if (healthBar != null){
+                Vector3 newScale = healthBar.localScale;
                 newScale.x = 0;
                 healthBar.localScale = newScale;
-                currentLife = 0;
-                StartCoroutine(Die());
             }
+            currentLife = 0;
+            StartCoroutine(Die());
         }
     }
 

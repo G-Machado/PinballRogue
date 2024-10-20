@@ -544,7 +544,7 @@ MonoBehaviour:
   maxLife: 10
   currentLife: 0
   damageTakenPercentage: 1
-  damageNormalizerAux: 0.5
+  damageNormalizerAux: 0.2
   deathAnimationDuration: 1
   healthBar: {fileID: 0}
   mainGameObject: {fileID: 1524411113276028}
@@ -561,7 +561,7 @@ GameObject:
   - component: {fileID: 95706204029656638}
   m_Layer: 0
   m_Name: TurtleShellPBR
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1201,13 +1201,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5645848056445560968}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.0005846991, y: -0.9999999, z: -0, w: 0}
-  m_LocalPosition: {x: 7.3692746, y: -0.44388235, z: 1.3837492}
+  m_LocalRotation: {x: 0.0005354079, y: -0.91569793, z: -0.4018668, w: 0.00023497116}
+  m_LocalPosition: {x: -0.0020325324, y: 0.8698175, z: -1.2033858}
   m_LocalScale: {x: 0.12161247, y: 1, z: 0.019562498}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4544219117696442}
-  m_LocalEulerAnglesHint: {x: 270, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 227.39, y: 0.07299805, z: 179.901}
 --- !u!33 &8348405889091000375
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -1284,13 +1284,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7627107481723067700}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.0005846991, y: -0.9999999, z: -0, w: 0}
-  m_LocalPosition: {x: 7.3692856, y: -0.45388222, z: 1.3837492}
+  m_LocalRotation: {x: 0.0005354079, y: -0.91569793, z: -0.4018668, w: 0.00023497116}
+  m_LocalPosition: {x: 0.038032606, y: 0.80418456, z: -1.1566185}
   m_LocalScale: {x: 0.12161247, y: 1, z: 0.019562498}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4544219117696442}
-  m_LocalEulerAnglesHint: {x: 270, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 227.39, y: 0.07299805, z: 179.901}
 --- !u!33 &656763423926127792
 MeshFilter:
   m_ObjectHideFlags: 0

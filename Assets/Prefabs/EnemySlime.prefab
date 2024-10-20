@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -9101137326705158784}
   m_Layer: 7
   m_Name: EnemySlime
-  m_TagString: Destructable
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -100,9 +100,10 @@ MonoBehaviour:
   maxLife: 10
   currentLife: 0
   damageTakenPercentage: 1
-  damageNormalizerAux: 0.5
+  damageNormalizerAux: 0.2
   deathAnimationDuration: 1
   healthBar: {fileID: 8368959160577585835}
+  mainGameObject: {fileID: 0}
   enemyGroup: {fileID: 0}
 --- !u!1 &5911184566296491413
 GameObject:
@@ -130,13 +131,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5911184566296491413}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: -0.7071068}
-  m_LocalPosition: {x: 0, y: 0.76, z: 0.74}
+  m_LocalRotation: {x: 0.929489, y: -0, z: -0, w: -0.36884978}
+  m_LocalPosition: {x: 0, y: 0.756361, z: -0.27142715}
   m_LocalScale: {x: 0.12161182, y: 1, z: 0.019561231}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8301607278614772953}
-  m_LocalEulerAnglesHint: {x: 270, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 223.289, y: 0, z: 0}
 --- !u!33 &476650901340166435
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -213,13 +214,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6301345673297228364}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: -0.7071068}
-  m_LocalPosition: {x: 0, y: 0.76, z: 0.75}
+  m_LocalRotation: {x: 0.929489, y: -0, z: -0, w: -0.36884978}
+  m_LocalPosition: {x: 0, y: 0.76363945, z: -0.26457214}
   m_LocalScale: {x: 0.12161182, y: 1, z: 0.019561231}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8301607278614772953}
-  m_LocalEulerAnglesHint: {x: 270, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 223.289, y: 0, z: 0}
 --- !u!33 &1708094236266663680
 MeshFilter:
   m_ObjectHideFlags: 0
