@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f31ffe5c084376148ba06a53f01b0ccf, type: 3}
   m_Name: BallDeck
   m_EditorClassIdentifier: 
-  prefabs: []
+  prefabs:
+  - {fileID: 301833644312155420, guid: cc16fd1182a003f4aadf3d3c9e45c83f, type: 3}
