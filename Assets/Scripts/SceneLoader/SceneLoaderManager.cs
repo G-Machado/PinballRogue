@@ -14,6 +14,12 @@ public class SceneLoaderManager : MonoBehaviour
     
     void Awake()
     {
+        if (instance != null)
+        {
+            Destroy(this.gameObject);
+            return;
+        }
+
         DontDestroyOnLoad(gameObject);
         instance = this;
         currentIndex = initialIndex;
@@ -48,5 +54,12 @@ public class SceneLoaderManager : MonoBehaviour
         isLoading = false;
         LoadScence(currentIndex);
         CameraPixellation.instance.PlayFadeIn();
+    }
+
+    private void TriggerSceneReload()
+    {
+        if (isLoading) return;
+        isLoading = true;
+        CameraPixellation.instance.PlayFadeOut();
     }
 }
