@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,6 +11,8 @@ public class CameraPixellation : MonoBehaviour
     {
         instance = this;
     }
+
+    public Action OnScreenFaded;
 
     [SerializeField] private RenderTexture pixelTexture;
     [SerializeField] private Vector2 referenceSize;
@@ -26,12 +29,27 @@ public class CameraPixellation : MonoBehaviour
 
         if(Input.GetKey(KeyCode.P))
         {
-            pixelAnimator.Play("Pixel_Collision");
+            //pixelAnimator.Play("Pixel_Collision");
+            SceneLoaderManager.instance.TriggerNextSceneLoad();
         }
+    }
+
+    public void TriggerScreenFaded()
+    {
+        OnScreenFaded?.Invoke();
     }
 
     public void PlayCollision()
     {
         pixelAnimator.Play("Pixel_Collision");
     }
+    public void PlayFadeOut()
+    {
+        pixelAnimator.Play("Pixel_FadeOut");
+    }
+    public void PlayFadeIn()
+    {
+        pixelAnimator.Play("Pixel_FadeIn");
+    }
+    
 }
