@@ -107,6 +107,10 @@ PrefabInstance:
       propertyPath: referenceSize.y
       value: 1080
       objectReference: {fileID: 0}
+    - target: {fileID: 7904003526370900641, guid: 839bf53e0fa378b42819e0b2390132ef, type: 3}
+      propertyPath: pixelationFactor
+      value: 2.3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 1858736953571814979, guid: 839bf53e0fa378b42819e0b2390132ef, type: 3}
