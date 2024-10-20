@@ -24,20 +24,23 @@ public class DestructableObject : MonoBehaviour
     {
         // velocity magnitude varies from 0 to 20
         float damageReceived = ballRB.velocity.magnitude * damageNormalizerAux * damageTakenPercentage * ballDamageMultiplier;
+        Debug.Log(damageReceived);
         currentLife -= damageReceived;
 
-        Vector3 newScale = healthBar.localScale;
-        newScale.x = healthBarXScale * (currentLife / maxLife);
-        healthBar.localScale = newScale;
-
-        if (currentLife <= 0)
-        {
-            newScale.x = 0;
+        if (healthBar != null)
+        { 
+            Vector3 newScale = healthBar.localScale;
+            newScale.x = healthBarXScale * (currentLife / maxLife);
             healthBar.localScale = newScale;
-            currentLife = 0;
-            StartCoroutine(Die());
-        }
 
+            if (currentLife <= 0)
+            {
+                newScale.x = 0;
+                healthBar.localScale = newScale;
+                currentLife = 0;
+                StartCoroutine(Die());
+            }
+        }
     }
 
     protected virtual void OnBeforeDestroy()
