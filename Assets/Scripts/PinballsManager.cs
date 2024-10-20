@@ -96,7 +96,7 @@ public class PinballsManager : MonoBehaviour
 
 
     private void GameOver(){
-
+        SceneLoaderManager.instance.TriggerSceneOver();
     }
 
 
