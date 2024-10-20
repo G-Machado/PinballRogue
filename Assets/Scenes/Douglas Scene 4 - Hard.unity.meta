@@ -1,5 +1,10 @@
 fileFormatVersion: 2
-guid: 3270ab841dbc517488a9b79772830620
+<<<<<<<< HEAD:Assets/Scenes/Douglas Scene 3 - Medium 2.unity.meta
+guid: b2ec6bd2b9fe266478fcf34f2ebecd1f
+========
+guid: 1d9e8084eb9357b41a1001d33a67b416
+folderAsset: yes
+>>>>>>>> main:Assets/Scripts/SceneLoader.meta
 DefaultImporter:
   externalObjects: {}
   userData: 
