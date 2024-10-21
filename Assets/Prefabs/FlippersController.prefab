@@ -398,7 +398,7 @@ MonoBehaviour:
   inputKeyLeft: 275
   flipStrength: 10000
   returnStrength: 500
-  targetVelocity: -1300
+  targetVelocity: -1400
   hingeJoints:
   - {fileID: 8086837798953176362}
   - {fileID: 8339290159441075724}

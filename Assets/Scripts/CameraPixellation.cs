@@ -34,7 +34,7 @@ public class CameraPixellation : MonoBehaviour
         pixelTexture.width = (int) finalSize.x;
         pixelTexture.height = (int) finalSize.y;
 
-        if(Input.GetKey(KeyCode.P))
+        if(Input.GetKey(KeyCode.R))
         {
             pixelAnimator.Play("Pixel_FadeOut");
             //pixelAnimator.Play("Pixel_Collision");
