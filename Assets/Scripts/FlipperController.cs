@@ -10,6 +10,7 @@ public class FlipperController : MonoBehaviour
 
     [SerializeField] private float flipStrength = 1000f; // Strength of the flipper
     [SerializeField] private float returnStrength = 500f; // Strength to return the flipper
+    [SerializeField] private float targetVelocity = -800;
 
     [SerializeField] private HingeJoint[] hingeJoints;
 
@@ -41,7 +42,7 @@ public class FlipperController : MonoBehaviour
 
 
         targetHinge.motor.force = flipStrength; // Set the flipping strength
-        targetHinge.motor.targetVelocity = -800f; // Speed to move the flipper up
+        targetHinge.motor.targetVelocity = targetVelocity; // Speed to move the flipper up
         targetHinge.motor.freeSpin = false; // Prevent free spin
         targetHinge.hinge.motor = targetHinge.motor;
         targetHinge.hinge.useMotor = true;
