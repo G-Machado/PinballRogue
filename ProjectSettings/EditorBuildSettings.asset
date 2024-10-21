@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Main Scene 1 - Easy.unity
     guid: ab84e79bb9015e54ba556217042f356f
   - enabled: 1
+    path: Assets/Scenes/Main Scene 3 - Medium 2.unity
+    guid: 65eceabc2e3fb184abcc4b4eb72f9510
+  - enabled: 1
     path: Assets/Scenes/Game Over Scene.unity
     guid: c0f0469e44637834f8696a5a751a449d
   m_configObjects: {}

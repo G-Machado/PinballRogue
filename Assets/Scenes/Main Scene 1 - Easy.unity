@@ -5315,7 +5315,7 @@ PrefabInstance:
       objectReference: {fileID: 13400000, guid: 31449cb668a5b5943aab2b60c707ba18, type: 2}
     - target: {fileID: 4955571228866294844, guid: 74273d8ee595af84180407e86ff36236, type: 3}
       propertyPath: flipStrength
-      value: 4000
+      value: 24000
       objectReference: {fileID: 0}
     - target: {fileID: 7822154716201956472, guid: 74273d8ee595af84180407e86ff36236, type: 3}
       propertyPath: m_LocalScale.x
