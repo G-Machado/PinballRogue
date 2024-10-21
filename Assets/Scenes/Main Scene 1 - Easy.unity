@@ -1019,6 +1019,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Jug_02
       objectReference: {fileID: 0}
+    - target: {fileID: 6698533136370866307, guid: 44b00c7db33473946ad48053b41e081f, type: 3}
+      propertyPath: m_TagString
+      value: Destructable
+      objectReference: {fileID: 0}
     - target: {fileID: 7321029070664364311, guid: 44b00c7db33473946ad48053b41e081f, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.635844
@@ -1363,6 +1367,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Food_02
       objectReference: {fileID: 0}
+    - target: {fileID: 6620078049728084045, guid: 219b3ba7a1084d44ba6ba3754e84f3a4, type: 3}
+      propertyPath: m_TagString
+      value: Destructable
+      objectReference: {fileID: 0}
     - target: {fileID: 7907484904471629608, guid: 219b3ba7a1084d44ba6ba3754e84f3a4, type: 3}
       propertyPath: m_Material
       value: 
@@ -1426,7 +1434,7 @@ MonoBehaviour:
   currentLife: 0
   damageTakenPercentage: 1
   damageNormalizerAux: 0.5
-  deathAnimationDuration: 5
+  deathAnimationDuration: 3
   healthBar: {fileID: 0}
   mainGameObject: {fileID: 0}
 --- !u!1 &471539291
@@ -1998,6 +2006,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Food_06 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5294542192182121627, guid: 633dca2d2047e074ebf00763cd0f7ff4, type: 3}
+      propertyPath: m_TagString
+      value: Destructable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2164,6 +2176,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Book_09 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4957231571477918332, guid: 92d4430c1aabefa4691079bac409cbf9, type: 3}
+      propertyPath: m_TagString
+      value: Destructable
+      objectReference: {fileID: 0}
     - target: {fileID: 5859313293803644140, guid: 92d4430c1aabefa4691079bac409cbf9, type: 3}
       propertyPath: m_LocalScale.x
       value: 3.1142778
@@ -2286,7 +2302,7 @@ MonoBehaviour:
   currentLife: 0
   damageTakenPercentage: 1
   damageNormalizerAux: 0.5
-  deathAnimationDuration: 5
+  deathAnimationDuration: 3
   healthBar: {fileID: 0}
   mainGameObject: {fileID: 0}
 --- !u!1 &705507993
@@ -2786,6 +2802,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Jug_03
       objectReference: {fileID: 0}
+    - target: {fileID: 9176750236434140590, guid: 913a7c559afba3e4b904814a31557cca, type: 3}
+      propertyPath: m_TagString
+      value: Destructable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2845,7 +2865,7 @@ MonoBehaviour:
   currentLife: 0
   damageTakenPercentage: 1
   damageNormalizerAux: 0.5
-  deathAnimationDuration: 5
+  deathAnimationDuration: 3
   healthBar: {fileID: 0}
   mainGameObject: {fileID: 0}
 --- !u!4 &831799424 stripped
@@ -3072,6 +3092,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bottle_02
       objectReference: {fileID: 0}
+    - target: {fileID: 392489427087728442, guid: e8300462cc969dc4c82430a0eab04fbd, type: 3}
+      propertyPath: m_TagString
+      value: Destructable
+      objectReference: {fileID: 0}
     - target: {fileID: 1025052294285706624, guid: e8300462cc969dc4c82430a0eab04fbd, type: 3}
       propertyPath: m_LocalScale.x
       value: 5.6698875
@@ -3187,7 +3211,7 @@ MonoBehaviour:
   currentLife: 0
   damageTakenPercentage: 1
   damageNormalizerAux: 0.5
-  deathAnimationDuration: 5
+  deathAnimationDuration: 3
   healthBar: {fileID: 0}
   mainGameObject: {fileID: 0}
 --- !u!1001 &899673506
@@ -3462,6 +3486,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Food_03
       objectReference: {fileID: 0}
+    - target: {fileID: 7893667134745137302, guid: dae57aea7aee8914da3ecfa4dc3e092d, type: 3}
+      propertyPath: m_TagString
+      value: Destructable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3521,7 +3549,7 @@ MonoBehaviour:
   currentLife: 0
   damageTakenPercentage: 1
   damageNormalizerAux: 0.5
-  deathAnimationDuration: 5
+  deathAnimationDuration: 3
   healthBar: {fileID: 0}
   mainGameObject: {fileID: 0}
 --- !u!1 &979846442 stripped
@@ -3572,7 +3600,7 @@ MonoBehaviour:
   currentLife: 0
   damageTakenPercentage: 1
   damageNormalizerAux: 0.5
-  deathAnimationDuration: 5
+  deathAnimationDuration: 3
   healthBar: {fileID: 0}
   mainGameObject: {fileID: 0}
 --- !u!1 &999921176 stripped
@@ -4856,7 +4884,7 @@ MonoBehaviour:
   currentLife: 0
   damageTakenPercentage: 1
   damageNormalizerAux: 0.5
-  deathAnimationDuration: 5
+  deathAnimationDuration: 3
   healthBar: {fileID: 0}
   mainGameObject: {fileID: 0}
 --- !u!1001 &1502872244
@@ -5270,6 +5298,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Candle_01 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 6630375654688184054, guid: c79d59d66358e0f45a098f4b8a82f8be, type: 3}
+      propertyPath: m_TagString
+      value: Destructable
+      objectReference: {fileID: 0}
     - target: {fileID: 6670234744341657123, guid: c79d59d66358e0f45a098f4b8a82f8be, type: 3}
       propertyPath: m_LocalScale.x
       value: 2.644
@@ -5381,7 +5413,7 @@ MonoBehaviour:
   currentLife: 0
   damageTakenPercentage: 1
   damageNormalizerAux: 0.5
-  deathAnimationDuration: 5
+  deathAnimationDuration: 3
   healthBar: {fileID: 0}
   mainGameObject: {fileID: 0}
 --- !u!1001 &1668712355
@@ -5516,6 +5548,10 @@ PrefabInstance:
     - target: {fileID: 5517711862614644272, guid: 4778fb0ebd4d7554887f2bd7e6fa39c1, type: 3}
       propertyPath: m_Name
       value: Axe_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517711862614644272, guid: 4778fb0ebd4d7554887f2bd7e6fa39c1, type: 3}
+      propertyPath: m_TagString
+      value: Destructable
       objectReference: {fileID: 0}
     - target: {fileID: 6735436603029585215, guid: 4778fb0ebd4d7554887f2bd7e6fa39c1, type: 3}
       propertyPath: m_Material
@@ -5720,7 +5756,7 @@ MonoBehaviour:
   currentLife: 0
   damageTakenPercentage: 1
   damageNormalizerAux: 0.5
-  deathAnimationDuration: 5
+  deathAnimationDuration: 3
   healthBar: {fileID: 0}
   mainGameObject: {fileID: 0}
 --- !u!4 &1744021539 stripped
@@ -6017,6 +6053,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Food_01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8814092482929038132, guid: 53a440911d2c3a54e980d8098965d99f, type: 3}
+      propertyPath: m_TagString
+      value: Destructable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6076,7 +6116,7 @@ MonoBehaviour:
   currentLife: 0
   damageTakenPercentage: 1
   damageNormalizerAux: 0.5
-  deathAnimationDuration: 5
+  deathAnimationDuration: 3
   healthBar: {fileID: 0}
   mainGameObject: {fileID: 0}
 --- !u!1001 &1869740010
