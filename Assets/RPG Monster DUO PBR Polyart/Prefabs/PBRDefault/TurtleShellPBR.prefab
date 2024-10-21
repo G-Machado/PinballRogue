@@ -546,7 +546,7 @@ MonoBehaviour:
   damageTakenPercentage: 1
   damageNormalizerAux: 0.2
   deathAnimationDuration: 1
-  healthBar: {fileID: 0}
+  healthBar: {fileID: 5246888372411607691}
   mainGameObject: {fileID: 1524411113276028}
   enemyGroup: {fileID: 0}
 --- !u!1 &1524411113276028
