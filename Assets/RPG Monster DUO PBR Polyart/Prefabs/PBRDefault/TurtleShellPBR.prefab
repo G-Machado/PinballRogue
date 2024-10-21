@@ -548,6 +548,7 @@ MonoBehaviour:
   deathAnimationDuration: 1
   healthBar: {fileID: 5246888372411607691}
   mainGameObject: {fileID: 1524411113276028}
+  animator: {fileID: 95706204029656638}
   enemyGroup: {fileID: 0}
 --- !u!1 &1524411113276028
 GameObject:

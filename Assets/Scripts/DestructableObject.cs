@@ -19,6 +19,8 @@ public class DestructableObject : MonoBehaviour
     [SerializeField]
     private GameObject mainGameObject;
 
+    [SerializeField] private Animator animator;
+
 
     public void TakeDamage(Rigidbody ballRB, float ballDamageMultiplier)
     {
@@ -45,6 +47,14 @@ public class DestructableObject : MonoBehaviour
             }
             currentLife = 0;
             StartCoroutine(Die());
+
+            if (animator)
+                animator.Play("Die");
+        }
+        else
+        {
+            if(animator)
+                animator.Play("GetHit");
         }
     }
 

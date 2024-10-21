@@ -21,7 +21,7 @@ public class EnemyManager : MonoBehaviour
     }
 
     public void EnemiesCleared(){
-
+        SceneLoaderManager.instance.TriggerNextSceneLoad();
     }
 
     // Start is called before the first frame update

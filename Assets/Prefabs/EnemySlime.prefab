@@ -104,6 +104,7 @@ MonoBehaviour:
   deathAnimationDuration: 1
   healthBar: {fileID: 8368959160577585835}
   mainGameObject: {fileID: 0}
+  animator: {fileID: 7188497379142523530}
   enemyGroup: {fileID: 0}
 --- !u!1 &5911184566296491413
 GameObject:
@@ -343,5 +344,10 @@ PrefabInstance:
 --- !u!4 &7106662357194585042 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4047972025199878, guid: 928a1377c1cd4515b208fef3a396b8ea, type: 3}
+  m_PrefabInstance: {fileID: 7102614601143312084}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &7188497379142523530 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 95457531584545886, guid: 928a1377c1cd4515b208fef3a396b8ea, type: 3}
   m_PrefabInstance: {fileID: 7102614601143312084}
   m_PrefabAsset: {fileID: 0}

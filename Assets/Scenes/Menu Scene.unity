@@ -2995,18 +2995,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1231003322544575695, guid: dd3daeb6e143a474d8ffb68a0fa3caec, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4186088514611614419, guid: dd3daeb6e143a474d8ffb68a0fa3caec, type: 3}
-      propertyPath: m_AdditionalShaderChannelsFlag
-      value: 25
-      objectReference: {fileID: 0}
-    - target: {fileID: 6355396011025740173, guid: dd3daeb6e143a474d8ffb68a0fa3caec, type: 3}
-      propertyPath: m_TargetTexture
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 8529552651126737467, guid: dd3daeb6e143a474d8ffb68a0fa3caec, type: 3}
       propertyPath: m_Name
       value: SceneLoader
@@ -4059,6 +4047,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bumpForceAmmount: 3
+  animator: {fileID: 0}
 --- !u!65 &2089822080
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4119,6 +4108,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bumpForceAmmount: 4
+  animator: {fileID: 0}
 --- !u!1001 &2122434215
 PrefabInstance:
   m_ObjectHideFlags: 0
