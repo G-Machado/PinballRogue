@@ -71,6 +71,10 @@ PrefabInstance:
       propertyPath: m_BackGroundColor.r
       value: 0.3207547
       objectReference: {fileID: 0}
+    - target: {fileID: 3659474613107615839, guid: 839bf53e0fa378b42819e0b2390132ef, type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 4179677187565999572, guid: 839bf53e0fa378b42819e0b2390132ef, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
