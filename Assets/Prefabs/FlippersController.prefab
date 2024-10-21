@@ -396,7 +396,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputKeyRight: 276
   inputKeyLeft: 275
-  flipStrength: 2000
+  flipStrength: 12000
   returnStrength: 500
   hingeJoints:
   - {fileID: 8086837798953176362}
