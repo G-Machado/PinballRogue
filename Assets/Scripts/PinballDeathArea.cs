@@ -15,6 +15,8 @@ public class PinballDeathArea : MonoBehaviour
         {
             pinballsManager.SpawnNewPinball();
             Destroy(other.gameObject);
+
+            CameraPixellation.instance.PlayCollision();
         }
     }
 
