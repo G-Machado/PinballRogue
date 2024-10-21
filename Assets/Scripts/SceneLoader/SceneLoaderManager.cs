@@ -10,7 +10,7 @@ public class SceneLoaderManager : MonoBehaviour
     [SerializeField] private int initialIndex = 0;
     [SerializeField] private CameraPixellation cameraPixelation;
     private int currentIndex;
-    private bool isLoading = false;
+    public bool isLoading = false;
 
     void Awake()
     {
@@ -58,7 +58,6 @@ public class SceneLoaderManager : MonoBehaviour
     private void HandleScreenFaded()
     {
         isLoading = false;
-        Debug.Log(currentIndex);
         LoadScence(currentIndex);
         CameraPixellation.instance.PlayFadeIn();
     }

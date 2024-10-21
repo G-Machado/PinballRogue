@@ -36,8 +36,9 @@ public class CameraPixellation : MonoBehaviour
 
         if(Input.GetKey(KeyCode.P))
         {
+            pixelAnimator.Play("Pixel_FadeOut");
             //pixelAnimator.Play("Pixel_Collision");
-            SceneLoaderManager.instance.TriggerNextSceneLoad();
+            //SceneLoaderManager.instance.TriggerNextSceneLoad();
         }
     }
 
@@ -48,10 +49,12 @@ public class CameraPixellation : MonoBehaviour
 
     public void PlayCollision()
     {
+        if (SceneLoaderManager.instance.isLoading) return;
         pixelAnimator.Play("Pixel_Collision");
     }
     public void PlayFadeOut()
     {
+        Debug.Log("GameOver");
         pixelAnimator.Play("Pixel_FadeOut");
     }
     public void PlayFadeIn()

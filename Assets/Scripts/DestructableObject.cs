@@ -26,7 +26,6 @@ public class DestructableObject : MonoBehaviour
     {
         // velocity magnitude varies from 0 to 20
         float damageReceived = ballRB.velocity.magnitude * damageNormalizerAux * damageTakenPercentage * ballDamageMultiplier;
-        Debug.Log(damageReceived);
         currentLife -= damageReceived;
 
         if (healthBar != null)
